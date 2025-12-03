@@ -3,6 +3,7 @@ import Logo from "./assets/Dj_Luke_Purdy_Logo.png";
 import Mixing from "./assets/luke mixing.jpeg";
 
 
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,13 +21,13 @@ export default function App() {
         <div className="max-w-full mx-auto flex justify-between items-center p-4">
           <img src={Logo} alt="DJ Luke Purdy Logo" className="h-48" />
           <div className="hidden md:flex space-x-6 text-2xl text-black">
-            <a href="#home" className="text-yellow-100 hover:text-red-500">Home</a>
-            <a href="#services" className="text-yellow-100 hover:text-red-500">Services</a>
-            <a href="contact" className="text-yellow-100 hover:text-red-500">Contact</a>
+            <a href="#home" className="text-yellow-200 hover:text-red-500">Home</a>
+            <a href="#services" className="text-yellow-200 hover:text-red-500">Services</a>
+            <a href="contact" className="text-yellow-200 hover:text-red-500">Contact</a>
           </div>
           {/*Mobile menu button*/}
           <button 
-          className="md:hidden"
+          className="md:hidden bg-yellow-200 text-black focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6"
@@ -80,7 +81,7 @@ export default function App() {
 
   <a
     href="#contact"
-    className="relative z-10 bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded transition"
+    className="animate-fadeUp animation-delay-200 relative z-10 bg-yellow-300 hover:bg-black text-black font-bold py-3 px-16 rounded transition animate-pulse"
   >
     Book Me
   </a>

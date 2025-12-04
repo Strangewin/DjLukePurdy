@@ -88,7 +88,7 @@ export default function App() {
 </section>
 
 
-      {/* Services Section */}
+      {/* Services Sectionn */}
       <section id="services" className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Services</h2>
